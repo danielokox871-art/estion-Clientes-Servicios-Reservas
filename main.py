@@ -37,6 +37,6 @@ class Cliente(Entidad):
     def get_correo(self):
         return self._correo
 
-    # Método extra (te suma puntos 🔥)
+    # Método extra 
     def mostrar_info(self):
         return f"Cliente: {self._nombre} | Correo: {self._correo}"
