@@ -64,7 +64,6 @@ class Servicio(Entidad, ABC):
     def mostrar_info(self):
         pass
 
-
 # ================= SALA =================
 class Sala(Servicio):
 
@@ -88,7 +87,6 @@ class Sala(Servicio):
             f"Horas: {self._horas} | "
             f"Total: ${self.calcular_costo():,.0f}"
         )
-
 
 # ================= EQUIPO =================
 class Equipo(Servicio):
@@ -164,7 +162,6 @@ class Reserva:
             f"{self.servicio.mostrar_info()} | "
             f"Estado: {self.estado}"
         )
-
 
 # ================= PRUEBAS CLIENTE =================
 def prueba_cliente():
@@ -298,7 +295,6 @@ def prueba_reservas():
         registrar_error(e)
 
     print("=== FIN PRUEBAS RESERVAS ===")
-
 
 # ================= EJECUCIÓN =================
 if __name__ == "__main__":
